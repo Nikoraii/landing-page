@@ -2,8 +2,8 @@ This is a portfolio project for educational purposes. Made by [Nikola](https://w
 
 [](https://skillicons.dev/icons?i=nextjs,react,ts,tailwind)
 
-Check out all [pictures](assets/screenshots/)
-![Home page](/assets/screenshots/home.png)
+Check out all [pictures](public/assets/screenshots/)
+![Home page](public/assets/screenshots/home.png)
 ## Getting Started
 
 NPM example:
