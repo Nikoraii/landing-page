@@ -1,6 +1,6 @@
 This is a portfolio project for educational purposes. Made by [Nikola](https://www.nikolastancic.com/)
 
-[](https://skillicons.dev/icons?i=nextjs,react,ts,tailwind)
+![Tech stack](https://skillicons.dev/icons?i=nextjs,react,ts,tailwind)
 
 Check out all [pictures](public/assets/screenshots/)
 ![Home page](public/assets/screenshots/home.png)
