@@ -31,3 +31,9 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .nav-link {
+    @apply block py-2 px-3 text-gray-900 border-b-2 border-b-transparent transition ease-in-out delay-150 hover:border-b-2 hover:border-gray-600 md:p-0;
+  }
+}
