@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalfAlt } from "react-icons/fa";
+import { IoIosCheckmark, IoIosClose } from "react-icons/io";
 
 export default function Page() {
   const reviews = [
@@ -98,6 +99,77 @@ export default function Page() {
         </div>
       </section>
       {/* ABOUT SECTION END */}
+
+      {/* PRICING SECTION START */}
+      <section id="pricing" className="min-h-screen pt-20">
+        <div className="w-10/12 mx-auto text-center">
+          <p className="text-gray-500">We offer a range of pricing plans to suit businesses of all sizes and requirements. Whether you need a simple web app or a complex software solution, we have a plan that fits your budget. Explore our pricing options and find the perfect plan for your business.</p>
+        </div>
+        <div className="flex flex-col lg:flex-row justify-center gap-2 mt-8 px-4">
+          {/* FIRST PRICE */}
+          <div className="card">
+            <div className="font-semibold text-gray-800">BASIC</div>
+            <div className="text-center font-bold text-5xl text-zinc-700 mt-4">500$</div>
+            <div className="text-center text-zinc-500">+10$ /monthly</div>
+            <div className="pricing-description">Ideal for startups and small businesses.</div>
+            <div className="pricing-comparission">
+              <div className="flex"><span className="line">{<IoIosCheckmark className="correct" />}</span> 1 single page website</div>
+              <div className="flex"><span className="line">{<IoIosCheckmark className="correct" />}</span> Always online</div>
+              <div className="flex"><span className="line">{<IoIosCheckmark className="correct" />}</span> 3 free updates per month for 6 months</div>
+              <div className="flex"><span className="line">{<IoIosCheckmark className="correct" />}</span> Responsive across all devices</div>
+              <div className="flex"><span className="line">{<IoIosClose className="not-correct" />}</span> Fully customizable</div>
+              <div className="flex"><span className="line">{<IoIosClose className="not-correct" />}</span> 24/7 support</div>
+              <div className="flex"><span className="line">{<IoIosClose className="not-correct" />}</span> Database integration</div>
+              <div className="flex"><span className="line">{<IoIosClose className="not-correct" />}</span> Custom software</div>
+            </div>
+            <button className="bg-gray-950 text-white block mx-auto px-4 py-1 w-20 rounded-full font-semibold drop-shadow-xl mt-auto mb-3 transition ease-in-out duration-200 hover:scale-105">BUY</button>
+          </div>
+
+          {/* SECOND PRICE */}
+          <div className="w-4/5 md:w-2/3 xl:w-4/12 2xl:w-1/4 h-[480px] border-zinc-600 shadow-md border-2 self-center rounded-lg p-4 bg-zinc-50 flex flex-col">
+            <div className="flex justify-between">
+              <div className="font-semibold text-gray-800">PRO</div>
+              <div className="font-semibold text-xs text-gray-950 outline outline-gray-950 bg-white py-1 px-2 rounded-full">MOST POPULAR</div>
+            </div>
+            <div className="text-center font-bold text-5xl text-zinc-700 mt-4">1,000$</div>
+            <div className="text-center text-zinc-500">+25$ /monthly</div>
+            <div className="pricing-description">Perfect for growing businesses needing more advanced features.</div>
+            <div className="pricing-comparission">
+              <div className="flex"><span className="line">{<IoIosCheckmark className="correct" />}</span> up to 3 single page websites</div>
+              <div className="flex"><span className="line">{<IoIosCheckmark className="correct" />}</span> Always online</div>
+              <div className="flex"><span className="line">{<IoIosCheckmark className="correct" />}</span> 10 free updates per month for 12 months</div>
+              <div className="flex"><span className="line">{<IoIosCheckmark className="correct" />}</span> Responsive across all devices</div>
+              <div className="flex"><span className="line">{<IoIosCheckmark className="correct" />}</span> Fully customizable</div>
+              <div className="flex"><span className="line">{<IoIosCheckmark className="correct" />}</span> 24/7 support</div>
+              <div className="flex"><span className="line">{<IoIosClose className="not-correct" />}</span> Database integration</div>
+              <div className="flex"><span className="line">{<IoIosClose className="not-correct" />}</span> Custom software</div>
+            </div>
+            <button className="bg-gray-950 text-white block mx-auto w-20  px-4 py-1 rounded-full text-lg font-bold drop-shadow-xl mt-auto mb-3 transition ease-in-out duration-200 hover:scale-105">BUY</button>
+          </div>
+
+          {/* THIRD PRICE */}
+          <div className="card">
+            <div className="font-semibold text-gray-800">ENTERPRISE</div>
+            <div className="text-center font-bold text-5xl text-zinc-700 mt-4">CUSTOM</div>
+            <div className="pricing-description">Best for large organizations requiring custom solutions.</div>
+            <div className="pricing-comparission">
+              <div className="flex"><span className="line">{<IoIosCheckmark className="correct" />}</span> up to 5 single page websites</div>
+              <div className="flex"><span className="line">{<IoIosCheckmark className="correct" />}</span> Always online</div>
+              <div className="flex"><span className="line">{<IoIosCheckmark className="correct" />}</span> Unlimited free updates for 12 months</div>
+              <div className="flex"><span className="line">{<IoIosCheckmark className="correct" />}</span> Responsive across all devices</div>
+              <div className="flex"><span className="line">{<IoIosCheckmark className="correct" />}</span> Fully customizable</div>
+              <div className="flex"><span className="line">{<IoIosCheckmark className="correct" />}</span> 24/7 support</div>
+              <div className="flex"><span className="line">{<IoIosCheckmark className="correct" />}</span> Database integration</div>
+              <div className="flex"><span className="line">{<IoIosCheckmark className="correct" />}</span> Custom software</div>
+            </div>
+            <button className="bg-gray-950 text-white block mx-auto w-24 rounded-full py-1 px-1 font-semibold drop-shadow-xl mt-auto mb-3 transition ease-in-out duration-200 hover:scale-105">CONTACT</button>
+          </div>
+        </div>
+        <div>
+          <p className="text-center text-sm mt-2 text-zinc-500 font-light">All indicated prices require at least 50% upfront payment.</p>
+        </div>
+      </section>
+      {/* PRICING SECTION END */}
 
     </main>
   );

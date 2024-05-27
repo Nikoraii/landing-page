@@ -36,4 +36,22 @@ body {
   .nav-link {
     @apply block py-2 px-3 text-gray-900 border-b-2 border-b-transparent transition ease-in-out delay-150 hover:border-b-2 hover:border-gray-600 md:p-0;
   }
+  .card {
+    @apply w-4/5 md:w-2/3 xl:w-4/12 2xl:w-1/4 h-[420px] border self-center shadow-md lg:self-end rounded-lg p-4 bg-zinc-50 flex flex-col;
+  }
+  .pricing-description {
+    @apply text-sm font-light text-neutral-600 mt-2;
+  }
+  .line {
+    @apply flex flex-wrap content-center;
+  }
+  .correct {
+    @apply text-green-600 w-6 h-6;
+  }
+  .not-correct {
+    @apply text-red-600 w-6 h-6;
+  }
+  .pricing-comparission {
+    @apply mt-4 mb-2 text-sm xl:text-base text-gray-800;
+  }
 }
