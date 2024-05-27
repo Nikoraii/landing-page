@@ -171,6 +171,39 @@ export default function Page() {
       </section>
       {/* PRICING SECTION END */}
 
+      {/* CONTACT SECTION START */}
+      <section id="contact" className="min-h-screen pt-20">
+        <div className="text-center text-gray-500 text-lg">Need additional information or just want to say hi? Feel free to contact us!</div>
+        <div className="w-4/5 xl:w-1/2 mx-auto bg-zinc-50 border rounded-lg mt-2 flex flex-col xl:flex-row text-center p-2 gap-2">
+          <div className="w-full xl:w-1/2">
+            <iframe className="rounded-lg overflow-hidden" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d221639.42730445447!2d-95.23391634529719!3d29.774285653589384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssr!2srs!4v1716562255065!5m2!1ssr!2srs" width="100%" height="100%" style={{ border: 0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+            <div className="w-full xl:w-1/2 text-left">
+              <form className="flex flex-col gap-4 p-2">
+                <div className="flex flex-col">
+                  <label className="text-lg text-gray-500 font-semibold">Name</label>
+                  <input type="text" placeholder="John Doe..." required className="rounded border border-gray-700 p-1 drop-shadow-sm" />
+                </div>
+
+                <div className="flex flex-col">
+                  <label className="text-lg text-gray-500 font-semibold">Email</label>
+                  <input type="email" placeholder="example@mail.com" required className="rounded border border-gray-700 p-1 drop-shadow-sm" />
+                </div>
+
+                <div className="flex flex-col">
+                  <label className="text-lg text-gray-500 font-semibold">Message</label>
+                  <textarea placeholder="Your message!" rows={5} required className="rounded border border-gray-700 p-1 drop-shadow-sm" />
+                </div>
+
+                <div>
+                  <button type="submit" className="block mx-auto bg-gray-950 text-white py-1 px-3 rounded-lg font-semibold shadow-lg transition ease-in-out duration-200 hover:scale-105">SEND</button>
+                </div>
+              </form>
+            </div>
+        </div>
+      </section>
+      {/* CONTACT SECTION END */}
+
     </main>
   );
 }
